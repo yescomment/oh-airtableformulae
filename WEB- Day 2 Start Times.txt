@@ -1,1 +1,56 @@
-IF({Saturday Start Time (Open Access)},  DATETIME_FORMAT(   SET_TIMEZONE(    {Saturday Start Time (Open Access)},    "America/New_York"   ),  "h:mma"),  IF(DATESTR({Start Time 1 (Advance Reservations)} & "9999") = "2022-10-22",   DATETIME_FORMAT(    SET_TIMEZONE(     {Start Time 1 (Advance Reservations)},     "America/New_York"    ),   "h:mma, "),   BLANK())  & IF(DATESTR({Start Time 2 (Advance Reservations)} & "9999") = "2022-10-22",   DATETIME_FORMAT(    SET_TIMEZONE(     {Start Time 2 (Advance Reservations)},     "America/New_York"    ),   "h:mma, "),   BLANK())  & IF(DATESTR({Start Time 3 (Advance Reservations)} & "9999") = "2022-10-22",   DATETIME_FORMAT(    SET_TIMEZONE(     {Start Time 3 (Advance Reservations)},     "America/New_York"    ),   "h:mma, "),   BLANK())  & IF(DATESTR({Start Time 4 (Advance Reservations)} & "9999") = "2022-10-22",   DATETIME_FORMAT(    SET_TIMEZONE(     {Start Time 4 (Advance Reservations)},     "America/New_York"    ),   "h:mma, "),   BLANK())  & IF(DATESTR({Start Time 5 (Advance Reservations)} & "9999") = "2022-10-22",   DATETIME_FORMAT(    SET_TIMEZONE(     {Start Time 5 (Advance Reservations)},     "America/New_York"    ),   "h:mma, "),   BLANK())  & IF(DATESTR({Start Time 6 (Advance Reservations)} & "9999") = "2022-10-22",   DATETIME_FORMAT(    SET_TIMEZONE(     {Start Time 6 (Advance Reservations)},     "America/New_York"    ),   "h:mma ",   BLANK())  ))
+IF({Saturday Start Time (Open Access)},
+  DATETIME_FORMAT(
+   SET_TIMEZONE(
+    {Saturday Start Time (Open Access)},
+    "America/New_York"
+   ),
+  "h:mma"),
+  IF(DATESTR({Start Time 1 (Advance Reservations)} & "9999") = "2022-10-22",
+   DATETIME_FORMAT(
+    SET_TIMEZONE(
+     {Start Time 1 (Advance Reservations)},
+     "America/New_York"
+    ),
+   "h:mma, "),
+   BLANK())
+  & IF(DATESTR({Start Time 2 (Advance Reservations)} & "9999") = "2022-10-22",
+   DATETIME_FORMAT(
+    SET_TIMEZONE(
+     {Start Time 2 (Advance Reservations)},
+     "America/New_York"
+    ),
+   "h:mma, "),
+   BLANK())
+  & IF(DATESTR({Start Time 3 (Advance Reservations)} & "9999") = "2022-10-22",
+   DATETIME_FORMAT(
+    SET_TIMEZONE(
+     {Start Time 3 (Advance Reservations)},
+     "America/New_York"
+    ),
+   "h:mma, "),
+   BLANK())
+  & IF(DATESTR({Start Time 4 (Advance Reservations)} & "9999") = "2022-10-22",
+   DATETIME_FORMAT(
+    SET_TIMEZONE(
+     {Start Time 4 (Advance Reservations)},
+     "America/New_York"
+    ),
+   "h:mma, "),
+   BLANK())
+  & IF(DATESTR({Start Time 5 (Advance Reservations)} & "9999") = "2022-10-22",
+   DATETIME_FORMAT(
+    SET_TIMEZONE(
+     {Start Time 5 (Advance Reservations)},
+     "America/New_York"
+    ),
+   "h:mma, "),
+   BLANK())
+  & IF(DATESTR({Start Time 6 (Advance Reservations)} & "9999") = "2022-10-22",
+   DATETIME_FORMAT(
+    SET_TIMEZONE(
+     {Start Time 6 (Advance Reservations)},
+     "America/New_York"
+    ),
+   "h:mma ",
+   BLANK())
+  ))
