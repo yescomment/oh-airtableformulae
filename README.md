@@ -4,6 +4,8 @@ Copy and paste into fields based on filenames.
 
 ## Line-by-line annotation
 
+Using `WEB- Day 2 End Times` as example
+
 ```
 IF({Saturday End Time (Open Access)},
   // if event is Open Access, we assume just one time range per day
@@ -69,3 +71,5 @@ IF({Saturday End Time (Open Access)},
 // ENDIF to end all ENDIFs
 )
 ```
+
+Yes, you can safely just RegEx `End Time` to `Start Time` to convert between.
