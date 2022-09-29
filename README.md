@@ -6,7 +6,7 @@ Copy and paste into fields based on filenames.
 
 Using `WEB- Day 2 End Times` as example
 
-**NOTE:** This is _not_ JavaScript, but that seems to be closest syntax to AirTable formuae
+**NOTE:** This is _not_ JavaScript, but that seems to be closest syntax to [AirTable formuae](https://support.airtable.com/docs/formula-field-reference) syntax.
 
 ```js
 IF({Saturday End Time (Open Access)},
