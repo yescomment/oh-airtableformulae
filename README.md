@@ -74,6 +74,6 @@ IF({Saturday End Time (Open Access)},
 )
 ```
 
-Yes, you can safely just RegEx `End Time` to `Start Time` to convert between.
+Yes, you can safely just RegEx `End Time` to `Start Time` to convert between. There should be 46 matches (assuming 22 AR start/end pairs, plus a pair of Open Access.
 
 Don't hesitate to email me if you chance yourself upon these —[Jacob](//jacobford.com/card)
