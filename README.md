@@ -6,7 +6,9 @@ Copy and paste into fields based on filenames.
 
 Using `WEB- Day 2 End Times` as example
 
-```
+**NOTE:** This is _not_ JavaScript, but that seems to be closest syntax to AirTable formuae
+
+```js
 IF({Saturday End Time (Open Access)},
   // if event is Open Access, we assume just one time range per day
   // (this is **NOT** always true, but it was quicker to just manually update the exceptions
