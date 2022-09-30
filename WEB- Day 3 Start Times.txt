@@ -1,7 +1,7 @@
-IF({Saturday Start Time (Open Access)},
+IF({Sunday Start Time (Open Access)},
   DATETIME_FORMAT(
     SET_TIMEZONE(
-      {Saturday Start Time (Open Access)},
+      {Sunday Start Time (Open Access)},
       "America/New_York"
     ),
     "h:mma"
